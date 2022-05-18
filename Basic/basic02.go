@@ -37,7 +37,7 @@ func fact(n int) int {
 	}
 	return n * fact(n-1)
 }
-func main() {
+func basic02() {
 	var arg int = 10
 	var arg1 int = 20
 	fmt.Println("Argument1: ", arg, "Argument2: ", arg1)

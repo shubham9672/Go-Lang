@@ -41,7 +41,7 @@ func printStack() {
 	fmt.Println(temp.value)
 }
 
-func main() {
+func Basic03() {
 	push(5)
 	push(20)
 	push(40)
