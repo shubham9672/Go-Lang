@@ -34,7 +34,7 @@ func Sqrt1(value float64) (float64, error) {
 	return math.Sqrt(value), nil
 }
 
-func main() {
+func errorHandling() {
 	for k, i := range map[int]int{1: 12, 0: 12} {
 		if r, e := divide(i, k); e != nil {
 			fmt.Println("error", e)
