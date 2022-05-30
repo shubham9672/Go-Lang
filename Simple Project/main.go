@@ -19,16 +19,21 @@ func main() {
 		"https://www.youtube.com/",
 		"https://go.dev/",
 	}
+	//record the start time
 	start := time.Now()
+	//Printing the time before ending main func
+	defer fmt.Println(time.Since(start))
+	//calling getWebsiteStatus for each url
 	for _, url := range webUrls {
 		wg.Add(1)
 		go getWebsiteStatus(url, wg)
 
 	}
 	wg.Add(2)
+	//Getting data for id 78 from a 100 data json api
 	go printJsonData(wg)
+	//Reading csv file
 	go readCsv(wg)
-	defer fmt.Println(time.Since(start))
 	wg.Wait()
 
 }
@@ -79,3 +84,18 @@ func getWebsiteStatus(url string, wg *sync.WaitGroup) {
 		fmt.Println(url, " status: ", res.StatusCode)
 	}
 }
+
+/*---------output--------
+read done
+{
+  "userId": 8,
+  "id": 78,
+  "title": "quam voluptatibus rerum veritatis",
+  "body": "nobis facilis odit tempore cupiditate quia\nassumenda doloribus rerum qui ea\nillum et qui totam\naut veniam repellendus"
+}
+https://go.dev/  status:  200
+https://github.com/  status:  200
+https://www.youtube.com/  status:  200
+https://www.google.com  status:  200
+68.6µs
+*/
