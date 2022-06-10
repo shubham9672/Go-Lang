@@ -6,52 +6,52 @@
 
 ## Topics Covered
 
-> Basic Syntax
+* Basic Syntax
     * Variables
     * Constants
     * Data types
 
-> Controll Statements
+* Controll Statements
     * If else
     * For loop
     * for range
     * switch
 
-> Function
+* Function
     * pass by value
     * passing multiple variables
     * Multiple return values
 
-> Recursion
+* Recursion
 
-> Arrays & Slices
+* Arrays & Slices
 
->Maps
+* Maps
 
-> Struct
+* Struct
 
 Using These Concepts implemented Stack
 <a href="./Basic/basic03.go">link</a>
 
-> Methods & Interface
+* Methods & Interface
 
-> File Handling
+* File Handling
 
-> Error Handling
+* Error Handling
 
-> defer Keyword
+* defer Keyword
 
-> Go Routiens
+* Go Routiens
 
-> Custom Package
+* Custom Package
 
-> Routiens Using Wait Groups
+* Routiens Using Wait Groups
 
-> Channels
+* Channels
 
-> Rest Api
+* Rest Api
 
-> Sql and Sqlite database Handling
+* Sql and Sqlite database Handling
 
 
 Build a result management using Go and SqLite.
