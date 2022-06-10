@@ -3,6 +3,7 @@
 
 # Go Lang Training
 </div>
+
 ## Topics Covered
 
 > Basic Syntax
